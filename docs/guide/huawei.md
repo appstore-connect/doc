@@ -2,90 +2,32 @@
 
 ## 配置说明
 
-华为应用市场是华为官方的应用分发平台，需要配置应用ID、客户端ID和客户端密钥。
+华为应用市场配置需要配置`developer_id`、`client_id`和`client_secret`。
 
-## 配置项
+## 配置项格式参考
 
 ```json
 {
-  "huawei": {
-    "appId": "应用ID",
-    "clientId": "客户端ID",
-    "clientSecret": "客户端密钥"
-  }
+  "type":"team_client_id",
+  "developer_id":"xxx",
+  "client_id":"xxx",
+  "client_secret":"xxx",
+  "configuration_version":"3.0"
 }
 ```
 
 ### 参数说明
 
+<img src = "/images/config_huawei.png" width="25%" />
+
+`type`和`configuration_version`是固定值
+
 | 参数 | 类型 | 必填 | 说明 |
 |------|------|------|------|
-| appId | string | 是 | 华为应用市场的应用ID |
-| clientId | string | 是 | API客户端ID |
-| clientSecret | string | 是 | API客户端密钥 |
+| developer_id | string | 是 | 华为应用市场的developer_id |
+| client_id | string | 是 | API客户端ID |
+| client_secret | string | 是 | API客户端密钥 |
 
 ## 获取配置信息
 
-### 步骤1：登录开发者联盟
-
-访问 [华为开发者联盟](https://developer.huawei.com) 并登录你的开发者账号。
-
-### 步骤2：获取应用ID
-
-1. 进入「管理中心」
-2. 点击「我的应用」
-3. 选择对应的应用
-4. 在「应用信息」页面可以看到 **App ID**
-
-### 步骤3：创建API客户端
-
-1. 在应用详情页面，找到「应用服务」菜单
-2. 点击「API 客户端」
-3. 点击「创建」按钮
-4. 填写客户端名称和相关信息
-5. 创建成功后，会显示 **Client ID** 和 **Client Secret**
-6. ⚠️ **重要**：Client Secret 只会显示一次，请立即保存
-
-## 配置示例
-
-```json
-{
-  "apps": [
-    {
-      "name": "我的应用",
-      "markets": {
-        "huawei": {
-          "appId": "123456789",
-          "clientId": "1234567890abcdef",
-          "clientSecret": "abcdef1234567890abcdef1234567890"
-        }
-      }
-    }
-  ]
-}
-```
-
-## 注意事项
-
-- Client Secret 只在创建时显示一次，请务必保存
-- 如果忘记 Client Secret，需要删除旧客户端并重新创建
-- 不要将凭证信息提交到代码仓库
-- 建议使用环境变量或配置文件管理敏感信息
-
-## 常见问题
-
-### Client Secret 忘记了怎么办？
-
-Client Secret 无法找回，只能删除原有的 API 客户端，重新创建一个新的。
-
-### API 客户端有数量限制吗？
-
-华为开放平台对每个应用的 API 客户端数量有一定限制，一般为5个。
-
-### 提示"应用未上架"？
-
-请确保：
-1. 应用已经在华为应用市场提交
-2. 应用至少有一个版本（可以是待审核、审核中或已上架状态）
-3. App ID 填写正确
-
+[参考文档](https://developer.huawei.com/consumer/cn/doc/AppGallery-connect-Guides/agcapi-getstarted-0000001111845114#section103mcpsimp)

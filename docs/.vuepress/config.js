@@ -1,6 +1,6 @@
-import { viteBundler } from '@vuepress/bundler-vite'
-import { defaultTheme } from '@vuepress/theme-default'
-import { defineUserConfig } from 'vuepress'
+import { viteBundler } from '@vuepress/bundler-vite';
+import { defaultTheme } from '@vuepress/theme-default';
+import { defineUserConfig } from 'vuepress';
 
 export default defineUserConfig({
   lang: 'zh-CN',
@@ -9,7 +9,7 @@ export default defineUserConfig({
   base: '/doc/',
 
   bundler: viteBundler(),
-  
+
   theme: defaultTheme({
     navbar: [
       {
@@ -22,27 +22,19 @@ export default defineUserConfig({
       },
     ],
     sidebar: {
-      "/guide/": getGuideSidebar("指南"),
+      '/guide/': getGuideSidebar('指南'),
     },
   }),
-})
-
+});
 
 function getGuideSidebar() {
   return [
     {
-      title: "指南",
+      title: '指南',
       collapsable: false,
       // sidebarDepth: 3,
-      children: [
-        "",
-        "huawei",
-        "yyb",
-        "xiaomi",
-        "vivo",
-        "oppo"
-      ],
-    }
+      children: ['', 'huawei', 'yyb', 'xiaomi', 'vivo', 'oppo'],
+    },
     // {
     //   title: "废弃接口",
     //   collapsable: false,
