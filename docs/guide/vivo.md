@@ -2,109 +2,26 @@
 
 ## 配置说明
 
-vivo 应用商店是 vivo 官方的应用分发平台，需要配置应用ID、访问密钥和密钥Secret。
+vivo 应用商店是 vivo 官方的应用分发平台，需要配置`access_key`和`access_secret`。
 
 ## 配置项
 
 ```json
 {
-  "vivo": {
-    "appId": "应用ID",
-    "accessKey": "访问密钥",
-    "accessSecret": "访问密钥Secret"
-  }
+  "access_key": "xxx",
+  "access_secret": "xxx"
 }
 ```
 
 ### 参数说明
 
+<img src = "/images/config_vivo.png" width="25%" />
+
 | 参数 | 类型 | 必填 | 说明 |
 |------|------|------|------|
-| appId | string | 是 | vivo应用商店的应用ID |
-| accessKey | string | 是 | API访问密钥Key |
-| accessSecret | string | 是 | API访问密钥Secret |
+| access_key | string | 是 | API访问密钥Key |
+| access_secret | string | 是 | API访问密钥Secret |
 
 ## 获取配置信息
 
-### 步骤1：登录开放平台
-
-访问 [vivo 开放平台](https://dev.vivo.com.cn) 并登录你的开发者账号。
-
-### 步骤2：进入应用管理
-
-1. 登录后点击「开发者中心」
-2. 选择「应用商店」
-3. 点击「应用管理」
-4. 找到你要配置的应用
-
-### 步骤3：获取应用ID
-
-1. 点击应用进入详情页
-2. 在「应用信息」中可以看到 **App ID**
-
-### 步骤4：创建访问密钥
-
-1. 在应用详情页面，找到「开放能力」或「API管理」
-2. 点击「访问密钥管理」
-3. 点击「创建密钥」
-4. 填写密钥名称和用途
-5. 创建成功后会显示：
-   - **Access Key**：访问密钥
-   - **Access Secret**：密钥密文
-6. ⚠️ **重要**：Access Secret 只显示一次，请立即保存
-
-## 配置示例
-
-```json
-{
-  "apps": [
-    {
-      "name": "我的应用",
-      "markets": {
-        "vivo": {
-          "appId": "10001234",
-          "accessKey": "abc123def456",
-          "accessSecret": "secret_key_xyz789abc"
-        }
-      }
-    }
-  ]
-}
-```
-
-## 注意事项
-
-- Access Secret 仅在创建时显示一次，请务必保存
-- 如果丢失 Secret，需要删除旧密钥并创建新密钥
-- 每个应用可以创建多个访问密钥
-- 不要将密钥信息提交到公开代码仓库
-- 建议定期更换访问密钥，提高安全性
-
-## 常见问题
-
-### Access Secret 丢失了怎么办？
-
-Access Secret 无法找回，只能删除原有密钥，重新创建新的访问密钥。
-
-### 可以创建多个访问密钥吗？
-
-可以。vivo 允许每个应用创建多个访问密钥，方便在不同环境或系统中使用。
-
-### 提示"无权访问"？
-
-请检查：
-1. 访问密钥是否正确
-2. 密钥是否已过期或被禁用
-3. 是否有该应用的访问权限
-4. App ID 是否填写正确
-
-### 如何禁用某个访问密钥？
-
-1. 进入应用详情的「访问密钥管理」
-2. 找到要禁用的密钥
-3. 点击「禁用」或「删除」按钮
-
-### 访问密钥有有效期吗？
-
-vivo 的访问密钥默认长期有效，但建议定期更换以保证安全性。可以在密钥管理中查看具体的有效期设置。
-
+[参考文档](https://dev.vivo.com.cn/documentCenter/doc/326)
