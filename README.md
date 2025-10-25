@@ -17,7 +17,7 @@ npm run docs:dev
 ## 构建
 
 ```bash
-npm run docs:build
+npm run build
 ```
 
 ## 部署
