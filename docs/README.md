@@ -1,19 +1,19 @@
 ---
 home: true
 title: 首页
-heroText: AppStore Connect 文档
+heroText: Connect 文档
 tagline: 欢迎来到文档站点
 actions:
   - text: 快速开始
     link: /guide/
     type: primary
 features:
-  - title: 简洁至上
-    details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
-  - title: Vue 驱动
-    details: 享受 Vue 的开发体验，可以在 Markdown 中使用 Vue 组件。
-  - title: 高性能
-    details: VuePress 会为每个页面预渲染生成静态的 HTML，同时在页面加载后作为 SPA 运行。
+  - title: 多市场统一管理
+    details: 一个应用即可查看华为、小米、OPPO、vivo、应用宝等多个安卓应用市场的审核状态。
+  - title: 多主体多应用支持
+    details: 支持配置多个公司主体、多个应用，集中查看所有应用的审核进度和应用信息。
+  - title: 简单易用
+    details: 简洁的配置方式，清晰的文档指引，快速上手，高效管理应用审核流程。
 footer: MIT Licensed
 ---
 

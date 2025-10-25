@@ -1,11 +1,11 @@
 {
   "name": "appstore-connect-doc",
   "version": "1.0.0",
-  "description": "AppStore Connect 文档",
+  "description": "Connect 文档",
   "type": "module",
   "scripts": {
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
   },
   "keywords": [
     "vuepress",

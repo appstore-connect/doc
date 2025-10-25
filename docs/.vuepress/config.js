@@ -4,8 +4,8 @@ import { defineUserConfig } from 'vuepress'
 
 export default defineUserConfig({
   lang: 'zh-CN',
-  title: 'AppStore Connect 文档',
-  description: 'AppStore Connect 文档站点',
+  title: 'Connect 文档',
+  description: 'Connect 文档站点',
   base: '/doc/',
 
   bundler: viteBundler(),
@@ -22,13 +22,31 @@ export default defineUserConfig({
       },
     ],
     sidebar: {
-      '/guide/': [
-        {
-          text: '指南',
-          children: ['/guide/README.md'],
-        },
-      ],
+      "/guide/": getGuideSidebar("指南"),
     },
   }),
 })
 
+
+function getGuideSidebar() {
+  return [
+    {
+      title: "指南",
+      collapsable: false,
+      // sidebarDepth: 3,
+      children: [
+        "",
+        "huawei",
+        "yyb",
+        "xiaomi",
+        "vivo",
+        "oppo"
+      ],
+    }
+    // {
+    //   title: "废弃接口",
+    //   collapsable: false,
+    //   children: ["Deprecated"],
+    // },
+  ];
+}
