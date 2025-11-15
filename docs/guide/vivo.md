@@ -1,8 +1,8 @@
-# vivo 应用商店配置
+# VIVO 应用商店配置
 
 ## 配置说明
 
-vivo 应用商店是 vivo 官方的应用分发平台，需要配置`access_key`和`access_secret`。
+VIVO 应用商店是 VIVO 官方的应用分发平台，需要配置`access_key`和`access_secret`。
 
 ## 配置项
 

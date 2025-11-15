@@ -1,8 +1,8 @@
-# 华为应用市场配置
+# 华为应用商店配置
 
 ## 配置说明
 
-华为应用市场配置需要配置`developer_id`、`client_id`和`client_secret`。
+华为应用商店配置需要配置`developer_id`、`client_id`和`client_secret`。
 
 ## 配置项格式参考
 
@@ -24,7 +24,7 @@
 
 | 参数 | 类型 | 必填 | 说明 |
 |------|------|------|------|
-| developer_id | string | 是 | 华为应用市场的developer_id |
+| developer_id | string | 是 | 华为应用商店的developer_id |
 | client_id | string | 是 | API客户端ID |
 | client_secret | string | 是 | API客户端密钥 |
 

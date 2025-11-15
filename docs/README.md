@@ -9,7 +9,7 @@ actions:
     type: primary
 features:
   - title: 多市场统一管理
-    details: 一个应用即可查看华为、小米、OPPO、vivo、应用宝等多个安卓应用市场的审核状态。
+    details: 一个应用即可查看华为、小米、OPPO、vivo、应用宝等多个安卓应用商店的审核状态。
   - title: 多主体多应用支持
     details: 支持配置多个公司主体、多个应用，集中查看所有应用的审核进度和应用信息。
   - title: 简单易用
