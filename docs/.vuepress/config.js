@@ -33,7 +33,16 @@ function getGuideSidebar() {
       title: '指南',
       collapsable: false,
       // sidebarDepth: 3,
-      children: ['', 'huawei', 'yyb', 'xiaomi', 'vivo', 'oppo', 'honor'],
+      children: [
+        '',
+        'huawei',
+        'yyb',
+        'xiaomi',
+        'vivo',
+        'oppo',
+        'honor',
+        'apple',
+      ],
     },
     // {
     //   title: "废弃接口",
